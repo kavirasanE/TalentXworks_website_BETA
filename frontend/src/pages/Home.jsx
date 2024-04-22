@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import ServiceContainer from '../components/ServiceContainer'
+import ServiceContainer from '../components/Services/ServiceContainer'
 import Legend from '../components/Legend'
 import MoveText from '../components/Home/MoveText';
-import Container from '../components/Home/Container';
+import Container from '../components/Container';
 import WeAssist from '../components/Home/WeAssist';
 import About from '../components/Home/About/About';
+import Footer from '../components/Footer';
 
 const Home = () => {
     const [rowreverse,setRowreverse] =useState(true)
@@ -64,6 +65,7 @@ const Home = () => {
              <div>
                  <About/>
              </div>
+             <Footer/>
         </div>
 
     )
