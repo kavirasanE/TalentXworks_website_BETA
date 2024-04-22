@@ -2,6 +2,7 @@ import React from 'react'
 import ServiceContainer from '../components/Services/ServiceContainer'
 import PartnerContainer from '../components/Partners/PartnerContainer'
 import TechExpertiseContainer from '../components/Partners/TechExpertiseContainer'
+import Footer from '../components/Footer'
 
 const Partners = () => {
     return (
@@ -38,12 +39,12 @@ const Partners = () => {
 
                 <p className='font-bold text-2xl py-10'>Complementary Partners and
                     Technology Expertise</p>
-                   <div className='mt-10'>
+                   <div className='mt-10 pb-10'>
                     <TechExpertiseContainer/>
                    </div>
 
             </div>
-
+ <Footer/>
         </div>
     )
 }

@@ -24,5 +24,9 @@
 }
 
 .animate-scroll {
-  animation: scroll 10s linear infinite; /* Adjust timing as needed */
+  animation: scroll 5s linear infinite; /* Adjust timing as needed */
+}
+
+.grad{
+   background: linear-gradient(90deg, #F47761 0%, #FFE4DF 100%);
 }
