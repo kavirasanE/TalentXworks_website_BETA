@@ -3,6 +3,8 @@ import ServiceContainer from '../components/ServiceContainer'
 import Legend from '../components/Legend'
 import MoveText from '../components/Home/MoveText';
 import Container from '../components/Home/Container';
+import WeAssist from '../components/Home/WeAssist';
+import About from '../components/Home/About/About';
 
 const Home = () => {
     const [rowreverse,setRowreverse] =useState(true)
@@ -53,9 +55,14 @@ const Home = () => {
             <div>
                 <Container rowreverse={rowreverse}/>
             </div>
-            <Legend/>
+            
+             <div className='bg-gray-100'>
+             <Legend/>
+            <WeAssist/>
+             <Legend /> 
+             </div>
              <div>
-                
+                 <About/>
              </div>
         </div>
 
