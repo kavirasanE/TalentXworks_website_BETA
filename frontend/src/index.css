@@ -9,24 +9,34 @@
   /* @apply mx-10; */
 }
 
-.pad{
+.pad {
   @apply px-40;
 }
+
 /* tailwind.css or index.css (if using tailwind JIT) */
 
 @keyframes scroll {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-100%);
   }
 }
 
 .animate-scroll {
-  animation: scroll 5s linear infinite; /* Adjust timing as needed */
+  animation: scroll 5s linear infinite;
+  /* Adjust timing as needed */
 }
 
-.grad{
-   background: linear-gradient(90deg, #F47761 0%, #FFE4DF 100%);
+.grad {
+  background: linear-gradient(90deg, #F47761 0%, #FFE4DF 100%);
 }
+
+.expertgrad {
+  border-radius: 10px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.17) 2%, rgba(255, 63, 63, 0.39) 48%, rgba(255, 255, 255, 0.39) 98.58%);
+  box-shadow: 0px 0px 8.3px 0px rgba(255, 255, 255, 0.25);
+}
+
