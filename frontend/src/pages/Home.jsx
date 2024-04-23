@@ -7,6 +7,7 @@ import WeAssist from '../components/Home/WeAssist';
 import About from '../components/Home/About/About';
 import Footer from '../components/Footer';
 import ExpertInContainer from '../components/Home/ExpertInContainer';
+import OurWorkContainer from '../components/Home/OurWorkContainer';
 
 const Home = () => {
     const [rowreverse,setRowreverse] =useState(true)
@@ -57,7 +58,10 @@ const Home = () => {
             <div>
                 <Container rowreverse={rowreverse}/>
             </div>
-            
+            <div>
+                <OurWorkContainer/>
+            </div>
+
              <div className='bg-gray-100'>
              <Legend/>
             <WeAssist/>
