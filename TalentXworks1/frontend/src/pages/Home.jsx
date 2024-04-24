@@ -4,12 +4,14 @@ import ImageSlider from '../components/ImageSlider'
 import JoinUs from '../components/JoinUs'
 import FAQ from '../components/FAQ'
 import Footer from '../components/Footer'
+import ImageCarousel from '../components/ImageCarousel'
 
 const Home = () => {
   return (
     <div>
     <Navbar/>
-    <ImageSlider/>
+    {/* <ImageSlider/> */}
+    <ImageCarousel/>
     <JoinUs/>
     <div>ajndcjdnojn</div>
     <div>
