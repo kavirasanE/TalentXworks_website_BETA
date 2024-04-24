@@ -1,5 +1,5 @@
 import React from 'react'
-import Frame23 from "../../assets/Frame 23.svg"
+import Frame23 from "../../assets/BusinessRequirement/Frame 23.svg"
 export const ServiceweOffer = () => {
     return (
         <div className='pad'>
