@@ -12,9 +12,9 @@ const ImageSlider = () => {
                 <p>Driving Success, Empowering Small and Medium Enterprises with Cutting-Edge IT Solutions to Navigate Today's Digital Landscape</p>
                 <p className='font-bold'>“Empowering SMEs with Innovative IT Solutions”</p>
             </div>
-            <div className='relative px-20'>
+            <div className='relative px-20 '>
             <img src={img1}  className='h-60 w-60 rounded-2xl'/>
-                <img src={img2} className=' h-40 w-40 rounded-2xl top-[150px] left-[250px] absolute' />
+                <img src={img2} className=' h-40 w-40 rounded-2xl top-[150px] left-[250px] absolute ' />
             </div>
         </div>
         </div>

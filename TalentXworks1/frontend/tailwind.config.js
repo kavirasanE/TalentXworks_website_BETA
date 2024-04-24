@@ -6,7 +6,9 @@ export default {
   ],
   theme: {
     extend: {
-      
+      colors:{
+        customGreen:"#82CBAC",
+      }
     },
   },
   plugins: [],

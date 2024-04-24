@@ -1,11 +1,15 @@
-import ImageSlider from "./components/ImageSlider";
-import Navbar from "./components/Navbar";
-
-export default function App() {
+import { BrowserRouter,Route,Routes } from "react-router-dom";
+import Home from "./pages/Home";
+ function App() {
   return (
     <>
-      <Navbar/>
-      <ImageSlider/>
+      <BrowserRouter>
+        <Routes>
+          <Route  path="/" element={<Home/>}/>
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
+
+export default App

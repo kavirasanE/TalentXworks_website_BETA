@@ -4,7 +4,7 @@ const Navbar = () => {
     return (
         <div className=' px-36 py-4'>
             <div className='font-bold border rounded-3xl bg-white/50 shadow-gray-200 shadow-md flex flex-row justify-between items-center p-4'>
-            <p className='text-xl pr-10 grad'>Logo</p>
+            <p className='text-xl pr-10 text-grad'>Logo</p>
                 <p>services</p>
                 <p>Industries</p>
                 <p>Products</p>
