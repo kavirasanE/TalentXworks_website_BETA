@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import ImageSlider from '../components/ImageSlider'
 import JoinUs from '../components/JoinUs'
 import FAQ from '../components/FAQ'
+import Footer from '../components/Footer'
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
     <div>
         <FAQ/>
     </div>
+    <Footer/>
     </div>
   )
 }
