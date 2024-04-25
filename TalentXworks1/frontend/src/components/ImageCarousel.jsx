@@ -1,56 +1,49 @@
-// import React from 'react';
-// import ImageSlider from './ImageSlider';
-// import { useState } from 'react';
+import React from 'react';
+import ImageSlider from './ImageSlider';
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import '@splidejs/splide/css';
+import img1 from "../assets/Home/img1.png";
+import img2 from "../assets/Home/img2.png";
+const ImageCarousel = () => {
+    const data = [
+        {
+            head: "The",
+            subhead: "TalentXworks",
+            desc: "Driving Success, Empowering Small and Medium Enterprises with Cutting-Edge IT Solutions to Navigate Today's Digital Landscape",
+            subdesc: "“Empowering SMEs with Innovative IT Solutions”",
+            img1: img1,
+            img2: img2
+        },
+        
+    ];
+    
+    const splideOptions = {
+        perPage: 1,
+        perMove: 1,
+        type: 'loop',
+        rewind: true,
+        keyboard: 'global',
+        gap: '1rem',
+        pagination: false,
+        padding: '2rem',
+        breakpoints: {
+            1200: { perPage: 1 },
+            991: { perPage: 2.3 },
+            768: { perPage: 2 },
+            500: { perPage: 1.3 },
+            425: { perPage: 1 },
+        },
+    };
+    return (
+        <div>
+            <Splide options={splideOptions}>
+                <SplideSlide>
+                    <ImageSlider data={data} />
+                </SplideSlide>
+            </Splide>
+        </div>
+    )
+};
 
-// const ImageCarousel = () => {
-//     const [currentIndex, setCurrentIndex] = useState(0);
-
-//     const prevSlide = () => {
-//         const isFirstSlide = currentIndex === 0;
-//         const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
-//         setCurrentIndex(newIndex);
-//     };
-
-//     const nextSlide = () => {
-//         const isLastSlide = currentIndex === slides.length - 1;
-//         const newIndex = isLastSlide ? 0 : currentIndex + 1;
-//         setCurrentIndex(newIndex);
-//     };
-
-//     const goToSlide = (slideIndex) => {
-//         setCurrentIndex(slideIndex);
-//     };
-//     return (
-
-//         <div className='max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative group'>
-//             <div
-//                 // style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-//                 className='w-full h-full rounded-2xl bg-center bg-cover duration-500'
-//             >
-//                 <ImageSlider/>
-//             </div>
-//             {/* Left Arrow */}
-//             <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
-//                 {/* <BsChevronCompactLeft onClick={prevSlide} size={30} /> */}
-//             </div>
-//             {/* Right Arrow */}
-//             <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
-//                 {/* <BsChevronCompactRight onClick={nextSlide} size={30} /> */}
-//             </div>
-//             {/* <div className='flex top-4 justify-center py-2'>
-//                 {slides.map((slide, slideIndex) => (
-//                     <div
-//                         key={slideIndex}
-//                         onClick={() => goToSlide(slideIndex)}
-//                         className='text-2xl cursor-pointer'
-//                     >
-//                         <RxDotFilled />
-//                     </div>
-//                 ))}
-//             </div> */}
-//         </div>
-//     );
-// };
-
-// export default ImageCarousel;
+export default ImageCarousel;
 
