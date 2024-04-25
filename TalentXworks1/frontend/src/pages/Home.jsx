@@ -15,17 +15,13 @@ const Home = () => {
     <div>
       <Navbar />
       {/* <ImageSlider/> */}
-      <div className='pt-20'>
+      <div>
         <ImageCarousel />
       </div>
-      <JoinUs />
+      <p className='font-bold text-2xl text-center pt-10'>Our Services </p>
         <OurServices />
-      
       <div>
         <Demo />
-      </div>
-      <div>
-        <FAQ />
       </div>
       <Footer />
     </div>

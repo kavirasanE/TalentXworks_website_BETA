@@ -22,9 +22,9 @@ const FAQ = () => {
                     TECHNOLOGY SERVICES FOR YOUR BUSINESS
                     </h2>
                 </div>
-                <div className="max-w-3xl mx-auto mt-8 md:mt-16 flex flex-col gap-5">
+                <div className="max-w-3xl mx-auto mt-8 md:mt-16 flex flex-col gap-10">
                     {/* Repeat this div block for each question */}
-                    <div className="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer grad rounded-3xl hover:bg-gray-50">
+                    <div className="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer grad1 rounded-3xl hover:bg-gray-50">
                         <button
                             type="button"
                             className="flex items-center justify-between w-full sm:p-2 sm:px-4"
@@ -54,13 +54,13 @@ const FAQ = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer grad rounded-3xl hover:bg-gray-50">
+                    <div className="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer grad1 rounded-3xl hover:bg-gray-50">
                         <button
                             type="button"
                             className="flex items-center justify-between w-full sm:p-2 sm:px-4"
                             onClick={() => toggleAnswer(1)} // Pass question index
                         >
-                            <span className="flex text-lg font-semibold text-black">Quality Engineering & Assurance. Performance, Security, and Reliability</span>
+                            <span className="flex text-lg font-semibold text-black">Product Engineering. Simplicity, Scalability, and Speed.    </span>
                             <svg
                                 id="arrow1"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -84,13 +84,13 @@ const FAQ = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer grad rounded-3xl hover:bg-gray-50">
+                    <div className="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer grad1 rounded-3xl hover:bg-gray-50">
                         <button
                             type="button"
                             className="flex items-center justify-between w-full sm:p-2 sm:px-4"
                             onClick={() => toggleAnswer(1)} // Pass question index
                         >
-                            <span className="flex text-lg font-semibold text-black">Quality Engineering & Assurance. Performance, Security, and Reliability</span>
+                            <span className="flex text-lg font-semibold text-black">Digital Transformation. Innovation, Agility, and Adaptability.</span>
                             <svg
                                 id="arrow1"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -114,80 +114,13 @@ const FAQ = () => {
                             </p>
                         </div>
                     </div>
-
-
-                    <div className="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer grad rounded-3xl hover:bg-gray-50">
+                    <div className="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer grad1 rounded-3xl hover:bg-gray-50">
                         <button
                             type="button"
                             className="flex items-center justify-between w-full sm:p-2 sm:px-4"
                             onClick={() => toggleAnswer(1)} // Pass question index
                         >
-                            <span className="flex text-lg font-semibold text-black">Quality Engineering & Assurance. Performance, Security, and Reliability</span>
-                            <svg
-                                id="arrow1"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                                className="w-6 h-6 text-gray-400"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M19 9l-7 7-7-7"
-                                ></path>
-                            </svg>
-                        </button>
-                        <div id="answer1" style={{ display: 'none' }} className="px-4 pb-5 sm:px-6 sm:pb-6">
-                            <p>
-                                Getting started is easy! Sign up for an account, and you'll have access to our
-                                platform's features. No credit card required for the initial signup.
-                            </p>
-                        </div>
-                    </div>
-
-
-
-                    <div className="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer grad rounded-3xl hover:bg-gray-50">
-                        <button
-                            type="button"
-                            className="flex items-center justify-between w-full sm:p-2 sm:px-4"
-                            onClick={() => toggleAnswer(1)} // Pass question index
-                        >
-                            <span className="flex text-lg font-semibold text-black">Quality Engineering & Assurance. Performance, Security, and Reliability</span>
-                            <svg
-                                id="arrow1"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                                className="w-6 h-6 text-gray-400"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M19 9l-7 7-7-7"
-                                ></path>
-                            </svg>
-                        </button>
-                        <div id="answer1" style={{ display: 'none' }} className="px-4 pb-5 sm:px-6 sm:pb-6">
-                            <p>
-                                Getting started is easy! Sign up for an account, and you'll have access to our
-                                platform's features. No credit card required for the initial signup.
-                            </p>
-                        </div>
-                    </div>
-
-
-                    <div className="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer grad rounded-3xl hover:bg-gray-50">
-                        <button
-                            type="button"
-                            className="flex items-center justify-between w-full sm:p-2 sm:px-4"
-                            onClick={() => toggleAnswer(1)} // Pass question index
-                        >
-                            <span className="flex text-lg font-semibold text-black">Quality Engineering & Assurance. Performance, Security, and Reliability</span>
+                            <span className="flex text-lg font-semibold text-black">Application Modernization. Streamline, Maintain, and Re-engineer.</span>
                             <svg
                                 id="arrow1"
                                 xmlns="http://www.w3.org/2000/svg"

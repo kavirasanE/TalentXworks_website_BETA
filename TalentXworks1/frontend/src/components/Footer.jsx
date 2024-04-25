@@ -1,5 +1,7 @@
 import React from 'react'
-
+import f from "../assets/f.svg"
+import i from "../assets/i.svg"
+import l from "../assets/l.svg"
 const Footer = () => {
     return (
         <div className='lg:mx-20 pt-20 pb-10 px-10 shadow-gray-300 shadow-xl font-medium '> 
@@ -7,9 +9,9 @@ const Footer = () => {
             <div className='flex flex-col'>
                 <p className='font-bold pb-5'>Join the Community</p>
                 <p className='flex flex-row gap-4 items-center'>
-                    <span>f</span>
-                    <span>i</span>
-                    <span>l</span>
+                    <span><img src={f}/></span>
+                    <span><img src={i}/></span>
+                    <span><img src={l}/></span>
                 </p>
             </div>
             <div className='flex flex-col'>

@@ -34,6 +34,8 @@ const ImageCarousel = () => {
     ];
     const splideOptions ={
         perPage:1,
+        interval: 5000,
+        autoplay:true,
         perMove:1,
         type:'loop',
         rewind:true,
@@ -59,7 +61,7 @@ const ImageCarousel = () => {
                         <div className='md:p-6 p-6'>
                             <div className='md:px-32 flex md:flex-row flex-col justify-between items-center'>
                                 <div className='flex flex-col gap-5 md:w-[400px] '>
-                                    <p className='font-extrabold text-xl md:text-5xl'> {dat.head} <br className='hidden'/> {dat.subhead}</p>
+                                    <p className='font-extrabold text-xl md:text-5xl '> {dat.head} <br className='hidden'/> <span className='grad'>{dat.subhead} </span></p>
                                     <p className='font-bold text-xs md:text-xl'>{dat.desc}</p>
                                 </div>
                                 <BannerImage dat={dat}/>

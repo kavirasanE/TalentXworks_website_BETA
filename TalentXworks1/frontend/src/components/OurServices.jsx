@@ -1,5 +1,7 @@
 import React from 'react'
 import service1 from "../assets/Home/service1.png"
+import service2 from "../assets/service2.png"
+import service3 from "../assets/service3.png"
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import '@splidejs/splide/css';
 const OurServices = () => {
@@ -10,13 +12,13 @@ const OurServices = () => {
       para: "Microsoft Dynamics 365 integrates applications ranging from Customer Relationship Management (CRM) to Enterprise Resource Planning (ERP)"
     },
     {
-      img: service1,
-      head: "Salesforce CRM",
+      img: service2,
+      head: "Digital Transformation",
       para: "Salesforce CRM helps businesses manage customer relationships, streamline sales processes, and improve productivity."
     },
     {
-      img: service1,
-      head: "Google Workspace",
+      img: service3,
+      head: "CRM Implementation",
       para: "Google Workspace offers a suite of productivity and collaboration tools, including Gmail, Google Drive, and Google Meet."
     },
     {
@@ -56,8 +58,10 @@ const OurServices = () => {
     }
   ];
   const splideOptions = {
-    perPage:3,
+    perPage: 3,
     perMove: 1,
+    interval: 5000,
+    autoplay: true,
     type: 'loop',
     rewind: true,
     keyboard: 'global',
@@ -78,10 +82,10 @@ const OurServices = () => {
       <Splide options={splideOptions}>
         {data.map((item) => (
           <SplideSlide>
-            <div className='lg:p-5 pt-20 mt-10  '>
+            <div className='lg:p-5 pt-20 mt-10 '>
               <div className='lg:w-80 h-96 hover:-translate-y-6 translate-transform duration-500 border-2 shadow-gray-400 shadow-2xl'>
-                <div className='  '>
-                  <img src={item.img} />
+                <div className=' flex  flex-col justify-center items-center'>
+                  <img src={item.img} className='w-36 h-36 my-10' />
                   <p className='hover:underline text-xl hover:text-purple-600 font-bold text-center '>{item.head}</p>
                   <p className=' text-center text-sm py-2'>{item.para}</p>
                 </div>
