@@ -12,8 +12,11 @@ const Home = () => {
   return (
     <div>
     <Navbar/>
-    <ImageSlider/>
+    {/* <ImageSlider/> */}
+    <div className='pt-20'>
+
      <ImageCarousel/>
+    </div>
     <JoinUs/>
     <div>
       <OurServices/>

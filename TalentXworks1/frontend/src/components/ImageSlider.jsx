@@ -5,23 +5,9 @@ import img2 from "../assets/Home/img2.png"
 const ImageSlider = ({data}) => {
 
     return (
-        <div>
-        {/* {data.map((data) => ( */}
-        <div className='p-6'>
-        <div className='px-32 flex flex-row justify-between items-center'>
-            <div className='flex flex-col gap-10 w-[400px]'>
-                <p className='font-extrabold text-5xl'> {data.head} <br /> {data.subhead}</p>
-                <p>{data.desc}</p>
-                <p className='font-bold'>{data.desc}</p>
-            </div>
-            <div className='relative px-20 '>
-            <img src={data.img1}  className='h-60 w-60 rounded-2xl'/>
-                <img src={data.img2} className=' h-40 w-40 rounded-2xl top-[150px] left-[250px] absolute ' />
-            </div>
-        </div>
-        </div>
-        {/* ))} */}
-        </div>
+       <>
+        
+       </>
     )
 }
 
