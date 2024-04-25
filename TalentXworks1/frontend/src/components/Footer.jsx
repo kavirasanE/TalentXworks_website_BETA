@@ -33,7 +33,7 @@ const Footer = () => {
                     <p > <span><input placeholder=' your email address' className='bg-gray-100 p-1 px-4 rounded-full '/></span> <button className='bg-black text-white my-2 p-1 px-5 rounded-full'>Signup</button></p>
             </div>
         </div>
-        <div className='flex flex-row justify-between pt-20'>
+        <div className='flex lg:flex-row flex-col justify-between items-center gap-4 lg:pt-20 pt-5'>
             <p>© 2024 All rights reserved.</p>
             <p>Created by <span className='text-orange-400'> ZhaCode</span></p>
         </div>

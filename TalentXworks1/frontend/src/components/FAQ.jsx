@@ -24,7 +24,7 @@ const FAQ = () => {
                 </div>
                 <div className="max-w-3xl mx-auto mt-8 md:mt-16 flex flex-col gap-10">
                     {/* Repeat this div block for each question */}
-                    <div className="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer grad1 rounded-3xl hover:bg-gray-50">
+                    <div className="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer grad1 rounded-3xl hover:bg-gray-50 px-2 h-20 lg:h-12">
                         <button
                             type="button"
                             className="flex items-center justify-between w-full sm:p-2 sm:px-4"
@@ -54,13 +54,13 @@ const FAQ = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer grad1 rounded-3xl hover:bg-gray-50">
+                    <div className="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer grad1 rounded-3xl hover:bg-gray-50 px-2 h-20 lg:h-12">
                         <button
                             type="button"
                             className="flex items-center justify-between w-full sm:p-2 sm:px-4"
                             onClick={() => toggleAnswer(1)} // Pass question index
                         >
-                            <span className="flex text-lg font-semibold text-black">Product Engineering. Simplicity, Scalability, and Speed.    </span>
+                            <span className="flex lg:text-lg text-sm font-semibold text-black ">Product Engineering. Simplicity, Scalability, and Speed.    </span>
                             <svg
                                 id="arrow1"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -84,13 +84,13 @@ const FAQ = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer grad1 rounded-3xl hover:bg-gray-50">
+                    <div className="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer grad1 rounded-3xl hover:bg-gray-50 px-2 h-20 lg:h-12">
                         <button
                             type="button"
                             className="flex items-center justify-between w-full sm:p-2 sm:px-4"
                             onClick={() => toggleAnswer(1)} // Pass question index
                         >
-                            <span className="flex text-lg font-semibold text-black">Digital Transformation. Innovation, Agility, and Adaptability.</span>
+                            <span className="flex lg:text-lg text-sm font-semibold text-black p-2">Digital Transformation. Innovation, Agility, and Adaptability.</span>
                             <svg
                                 id="arrow1"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -114,13 +114,13 @@ const FAQ = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer grad1 rounded-3xl hover:bg-gray-50">
+                    <div className="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer grad1 rounded-3xl hover:bg-gray-50 px-2 h-20 lg:h-12">
                         <button
                             type="button"
                             className="flex items-center justify-between w-full sm:p-2 sm:px-4"
                             onClick={() => toggleAnswer(1)} // Pass question index
                         >
-                            <span className="flex text-lg font-semibold text-black">Application Modernization. Streamline, Maintain, and Re-engineer.</span>
+                            <span className="flex lg:text-lg text-sm font-semibold text-black p-2">Application Modernization. Streamline, Maintain, and Re-engineer.</span>
                             <svg
                                 id="arrow1"
                                 xmlns="http://www.w3.org/2000/svg"

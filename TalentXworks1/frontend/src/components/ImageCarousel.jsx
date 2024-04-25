@@ -34,8 +34,11 @@ const ImageCarousel = () => {
     ];
     const splideOptions ={
         perPage:1,
-        interval: 5000,
+        interval: 3000,
         autoplay:true,
+        speed: 2000,
+        rewindSpeed: 2000,
+        lazyLoad:true,
         perMove:1,
         type:'loop',
         rewind:true,

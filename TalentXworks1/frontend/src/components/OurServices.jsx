@@ -60,7 +60,10 @@ const OurServices = () => {
   const splideOptions = {
     perPage: 3,
     perMove: 1,
-    interval: 5000,
+    speed: 4000,
+    rewindSpeed: 2000,
+    lazyLoad:true,
+    interval: 6000,
     autoplay: true,
     type: 'loop',
     rewind: true,
@@ -82,8 +85,8 @@ const OurServices = () => {
       <Splide options={splideOptions}>
         {data.map((item) => (
           <SplideSlide>
-            <div className='lg:p-5 pt-20 mt-10 '>
-              <div className='lg:w-80 h-96 hover:-translate-y-6 translate-transform duration-500 border-2 shadow-gray-400 shadow-2xl'>
+            <div className='lg:p-5 lg:pt-20 pt-10 mt-10 '>
+              <div className='lg:w-80 lg:h-96 h-[400px] hover:-translate-y-6 translate-transform duration-500 border-2 shadow-gray-400 shadow-2xl'>
                 <div className=' flex  flex-col justify-center items-center'>
                   <img src={item.img} className='w-36 h-36 my-10' />
                   <p className='hover:underline text-xl hover:text-purple-600 font-bold text-center '>{item.head}</p>
