@@ -56,7 +56,7 @@ const OurServices = () => {
     }
   ];
   const splideOptions = {
-    perPage: 3,
+    perPage:3,
     perMove: 1,
     type: 'loop',
     rewind: true,
@@ -66,9 +66,9 @@ const OurServices = () => {
     padding: '2rem',
     breakpoints: {
       1200: { perPage: 3 },
-      991: { perPage: 2.3 },
+      991: { perPage: 2 },
       768: { perPage: 2 },
-      500: { perPage: 1.3 },
+      500: { perPage: 1 },
       425: { perPage: 1 },
     },
   };
@@ -78,8 +78,8 @@ const OurServices = () => {
       <Splide options={splideOptions}>
         {data.map((item) => (
           <SplideSlide>
-            <div className='p-5 pt-20  '>
-              <div className='w-80 h-96 hover:-translate-y-6 translate-transform duration-500 border-2 shadow-gray-200 shadow-xl'>
+            <div className='lg:p-5 pt-20 mt-10  '>
+              <div className='lg:w-80 h-96 hover:-translate-y-6 translate-transform duration-500 border-2 shadow-gray-400 shadow-2xl'>
                 <div className='  '>
                   <img src={item.img} />
                   <p className='hover:underline text-xl hover:text-purple-600 font-bold text-center '>{item.head}</p>

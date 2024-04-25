@@ -7,24 +7,27 @@ import Footer from '../components/Footer'
 import ImageCarousel from '../components/ImageCarousel'
 import Services from '../components/Services'
 import OurServices from '../components/OurServices'
+import Parallex from '../components/Parallex'
+import Demo from './Demo'
 
 const Home = () => {
   return (
     <div>
-    <Navbar/>
-    {/* <ImageSlider/> */}
-    <div className='pt-20'>
-
-     <ImageCarousel/>
-    </div>
-    <JoinUs/>
-    <div>
-      <OurServices/>
-    </div>
-    <div>
-        <FAQ/>
-    </div>
-    <Footer/>
+      <Navbar />
+      {/* <ImageSlider/> */}
+      <div className='pt-20'>
+        <ImageCarousel />
+      </div>
+      <JoinUs />
+        <OurServices />
+      
+      <div>
+        <Demo />
+      </div>
+      <div>
+        <FAQ />
+      </div>
+      <Footer />
     </div>
   )
 }

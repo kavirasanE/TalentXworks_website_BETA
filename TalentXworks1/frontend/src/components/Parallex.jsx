@@ -1,70 +1,84 @@
-// Parallax.js
-
-import React ,{useRef} from 'react';
-import service1 from "../assets/Home/service1.png"
-import img1 from "../assets/Home/img1.png";
-import { Parallax, ParallaxLayer } from '@react-spring/parallax';
-import OurServices from './OurServices';
+import React, { useEffect } from 'react';
+// import parallaxImage1 from './images/parallax-image1.jpg';
+// import parallaxImage2 from './images/parallax-image2.jpg';
+import service1 from '../assets/Home/service1.png';
 const Parallex = () => {
-    const ref = useRef();
+  useEffect(() => {
+    const handleScroll = () => {
+      const parallaxElements = document.querySelectorAll('.parallax-bg');
+      parallaxElements.forEach(element => {
+        let scrollPosition = window.pageYOffset;
+        element.style.transform = `translateY(${scrollPosition * 0.5}px)`;
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div>
-    <OurServices/>
-    <Parallax pages={1} ref={ref}>
-        {/* <ParallaxLayer speed={1}>
-            <h2>Welcome to my website</h2>
-        </ParallaxLayer>
-
-        <ParallaxLayer offset={1} speed={0.5}>
-            <h2>Web development is fun!</h2>
-        </ParallaxLayer> */}
-               
-        <ParallaxLayer
-          offset={0}
-          speed={1}
-          factor={2}
-          style={{
-            backgroundImage: `url(${img1})`,
-            backgroundSize: 'cover',
-          }}
-        />
-        <ParallaxLayer
-          offset={2}
-          speed={1}
-          factor={4}
-          style={{
-            backgroundImage: `url(${img1})`,
-            backgroundSize: 'cover',
-          }}
-        ></ParallaxLayer>
-        <ParallaxLayer
-          sticky={{ start: 0.9, end: 2.5 }}
-          style={{ textAlign: 'center' }}
-        >
-          
-        </ParallaxLayer>
-        <ParallaxLayer
-          offset={0.2}
-          speed={0.05}
-          onClick={() => ref.current.scrollTo(3)}
-        >
-        <div className='bg-red-400 absolute right-0  w-80 h-96'>
-          <h2>Welcome to my website</h2>
-
+    <div className="overflow-x-hidden bg-blue-400">
+      <div className="relative h-screen overflow-hidden">
+        <div
+          className="absolute inset-0 bg-no-repeat bg-cover bg-fixed parallax-bg"
+          style={{ backgroundImage: `url(${service1})` }}
+        ></div>
+        <div className="absolute inset-0 flex justify-center items-center">
+          <div className="text-center bg-green-400 mt-4">
+            <h1 className="text-3xl text-white mt-5">
+              Welcome to Tailwind CSS Parallax Effect
+            </h1>
+            <p className="text-lg text-white mt-5 ml-4">
+              Elevate your web design with stunning parallax effects using
+              Tailwind CSS. Impress your visitors and create engaging user
+              experiences with minimal effort. Whether you're a beginner or an
+              experienced developer, Tailwind CSS makes it easy to implement
+              parallax scrolling and bring your designs to life.
+            </p>
+          </div>
         </div>
-        </ParallaxLayer>
-        <ParallaxLayer
-          offset={3}
-          speed={2}
-          onClick={() => ref.current.scrollTo(0)}
-        >
-        </ParallaxLayer>
-      </Parallax>
+      </div>
+      <div className="relative h-screen overflow-hidden">
+        <div
+          className="absolute inset-0 bg-no-repeat bg-cover bg-fixed parallax-bg"
+          style={{ backgroundImage: `url(${service1})` }}
+        ></div>
+        <div className="absolute inset-0 flex justify-center items-center">
+          <div className="text-center">
+            <h1 className="text-4xl text-green-300">HTML</h1>
+            <p className="text-lg text-white">
+              Tailwind CSS is a utility-first CSS framework that allows you to
+              build custom designs rapidly. With its intuitive class-based
+              approach, you can easily create responsive and visually
+              appealing layouts without writing custom CSS. Tailwind provides a
+              comprehensive set of pre-built utility classes for styling
+              elements, making it easy to customize every aspect of your design.
+              Whether you're a beginner or an experienced developer, Tailwind
+              CSS empowers you to create modern and beautiful websites with
+              ease.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="h-96 bg-green-500 w-full">
+        <div className="flex flex-col justify-center items-center h-full">
+          <h2 className="text-3xl font-bold text-white mb-4">
+            Experience the Parallax Effect
+          </h2>
+          <p className="text-lg text-white ml-4">
+            Discover the mesmerizing world of parallax scrolling with Tailwind
+            CSS. Create stunning visual effects and captivate your audience
+            with immersive web experiences. Whether you're building a portfolio,
+            showcasing products, or telling a story, parallax adds depth and
+            intrigue to your website.
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
 
 export default Parallex;
-
-
-
