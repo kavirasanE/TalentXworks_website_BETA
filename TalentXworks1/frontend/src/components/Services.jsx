@@ -3,19 +3,13 @@ import img1 from "../assets/Home/img1.png"
 const Services = () => {
     return (
         <div>
-
-
             <div className="parallax"></div>
-
             <div style={{ height: "1000px", backgroundColor: "red", fontSize: "36px" }}>
                 Scroll Up and Down this page to see the parallax scrolling effect.
                 This div is just here to enable scrolling.
                 Tip: Try to remove the background-attachment property to remove the scrolling effect.
             </div>
-
             <div className="parallax"></div>
-
-
         </div>
     )
 }

@@ -10,10 +10,11 @@ const Demo = () => {
     return (
         <div>
             <Para1 />
-            <JoinUs />
-            <Para2 />
             <FAQ />
-            <Para3 />
+            
+            <Para2 />
+            <JoinUs />
+           
 
         </div>
     )

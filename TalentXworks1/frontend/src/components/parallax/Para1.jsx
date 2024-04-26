@@ -1,9 +1,9 @@
 import React from 'react'
 import { Parallax } from 'react-parallax';
-import Nasa from '../../img/nasa.jpg'
+import Nasa from '../../img/products9.jpg'
 const Para1 = () => {
   return (
-    <Parallax className='image' blur={0} bgImage={Nasa} strength={800} bgImageStyle={{ minHeight: "100vh" }}>
+    <Parallax className='image' blur={4} bgImage={Nasa} strength={800} bgImageStyle={{ minHeight: "100vh" }}>
       <div className='content'>
         <div className="img-txt lg:w-[500px] w-52  lg:h-[450px] transform -skew-x-12">
           <div className=' lg:mt-20 lg:ml-10 ml-2 p-2'>
